@@ -6,6 +6,10 @@
 \usepackage[ngerman]{babel}
 \usepackage{wallpaper}
 \usepackage{multirow}
+\usepackage{etoolbox}
+
+\newcounter{magicrownumbers}[page]
+\newcommand\rownumber{\stepcounter{magicrownumbers}\arabic{magicrownumbers}}
 
 \CenterWallPaper{0.8}{./inphima_final_grau}
 
@@ -15,55 +19,398 @@
 \geometry{a4paper, top=10mm, left=20mm, right=20mm, bottom=10mm}
 \renewcommand*\arraystretch{1.5}
 
+\usepackage[usenames,dvipsnames,svgnames]{colortbl}
+
+\newcommand{\pretext}{An Startpositionen kurze Vorstellungsrunde. Die Führer beginnen. Jeder nennt Namen, Alter, Hauptfach
+und was er vom Studium erwartet (oder was euch für'ne coole Frage einfällt). Kurzes
+Einführungsplädoyer: Vorlesungen, Übungen, Klausurzulassung, Prüfungsanmeldung. Selbständigkeit
+wichtig, Lerngruppen und Zusammenhalt wichtig, große
+Anstrengung in die Ersti-Vorlesungen legen, damit man die weg hat, nicht mitten im Semester
+Vorlesungen aufgeben, nicht mitten im Semester mit den Übungszetteln aufhören, weil die Punkte
+reichen, etc. etc. etc.
+
+\textbf{In den Stockwerken 1-3 der MathNat sowie im ZIM ist auf Ruhe zu achten!}
+
+\textbf{Liefert die Erstis nach den Führungen (spätestens 15:45 Uhr) bitte in folgenden Hörsälen ab:}\\
+Informatik: \textbf{5E}, Physik: \textbf{5M}, Mathe: \textbf{5H}\\}
 
 
-
-\parindent 0pt
+\parindent0pt
 \begin{document}
-
-{\LARGE \textbf{Stationen}}\\
-\hspace{-10mm}
-\begin{tabularx}{\textwidth}{p{0.2\textwidth}p{0.2\textwidth}p{0.6\textwidth}}
- \multirow{3}{*}{\textbf{Östlich:}} \\ & & \\
- Uni Ost &  & Richtung zeigen reicht, wenn nicht anders gewünscht \\
- Subway & & \\
- InfoPoint & \textit{zw. Uni Ost und Gebäude 25} & hier sitzt u.a. abends ein Securitas Mitarbeiter, manchmal finden sich hier verlorene Gegenstände \\
- Sportanlage &  & Richtung zeigen reicht \\
- \multirow{3}{*}{\textbf{Gbd. 25:}} \\ & & \\
- Cafete &  & Mensakarte? \\
- schwarzes Brett der Mathe & \textit{vor Cafete rechts} &  \\
- Schweinemensa &  & \\
- Fachbib & & Keine Rucksäcke mitnehmen \\
- Lageplan & \textit{egal welcher} & Gbd. System erklären \\
- Toiletten & \textit{viele} & vorallem Frauen finden die Toiletten häufig nicht \\
- FS Mathe & 25.22.U1.25 & \\
- FS Physik & 25.32.00.21 & \\
- schwarzes Brett Physik & \textit{neben der Physik} & \\
- Rechenzentrum & 25.41 & Hinweis aufs Benutzerbüro und benutzbare Rechner \\
- Abgabekästen Mathe &  & \\
- Glaskasten Mathe &  & Klausurergebnisse... \\ 
- Geschäftszimmer Mathe & 25.22.O0.55 & Bitte nicht alle durch den Flur trampeln, hier gibt's die Mathescheine \\
- FS Info & 25.12.O1.18 & Volt/Club-Mate 1,20, Gang runter: Büro Hr. Schoettner \\
- Glaskasten Informatik &  & Aktuelle Informationen zur FS Info \\
-  \multirow{3}{*}{\textbf{Richtung Mensa:}} \\ & & \\
- UniBib & 24.41 & opt: Ausweis besorgen, Sparkassenautomat \\
- Parkplätze & & Achtung: Blitzer \\
- Bushaltestellen & & \\
- AStA & 25.23.U1.45 & Party, Sportprogramm, \\
- ExLibris & 24.41 & Mo.-Fr.: 08:00-20:00 Uhr, Sa.-So.: 10:00-19:00 Uhr \\
- Kiosk &  \textit{auf der Mensabrücke} & \\
- Stern Verlag & \textit{auf der Mensabrücke} & \\
- Roy-Lichtenstein-Saal & 22.01 U1 & verschiedene Tanzkurse, historischer Schwertkampf Trainig und ggf. andere Veranstaltungen \\
- Mensa, Campus Vita, Café Uno & Gbd. 21 & \\
- Bafög Amt & 21.12.01 & \\
- Prüfungsamt & 16.11.O4 &
+\pretext
+\begin{tabularx}{\textwidth}{p{.02\textwidth}p{.3\textwidth}p{.68\textwidth}}
+  \textbf{Nr.} & \textbf{Station} & \textbf{Hinweise} \\
+  \hline
+  \multicolumn{3}{l}{\large{\textbf{Gebäude 25:}}} \\
+  \rowcolor{cyan}
+  \rownumber & FS-Info & Startposition -- An Frau Rennwanz vorbeilaufen beim kommen oder gehen. Frau
+  Rennwanz macht Regen und Feuer! \\
+  \rownumber & FS-Mathe & Startposition \\
+  \rownumber & FS-Physik & Startposition \\
+  \rownumber & ZIM & Startposition \\
+  \rownumber & Cafete & Startposition -- Mensakarte kann gekauft werden (geht auch an der anderen Cafete)\\
+  \rownumber & Schweinemensa/Wanne & Startposition \\
+  \rownumber & Fachbib & Startposition \\
+  \rownumber & Mathe-Prüfungskästen & Startposition \\
+  \rownumber & Copy-Shop (25.22.01.53) & \\
+  \rownumber & Glaskästen &  Alle 3 Kästen zeigen (im Vorbeilaufen von anderen Stationen)\\
+  \rownumber & Hörsääle & Im vorbeigehen zeigen ("`Hier ist HS5D"' usw.) \\
+  \rownumber & Toiletten & Wenn ihr an einer Toilette vorbeikommt, erklärt wo man
+  die jeweils andere Toilette finden würde \\
+  \rownumber & Frau Simons &  Prüfungsangelegenheiten für Mathematiker (nicht überspringen!) \\
+  \rownumber & Lageplan  & am Hauptausgang \\
+  \rownumber & Botanischer Garten, Haltestelle Uni/Ost, Sportanlagen & Am Haupteingang in die
+  Richtungen zeigen, wie man hinkommt. \\
+  \rownumber & Securitas & auch nur zeigen \\
+  \hline
+  \multicolumn{3}{l}{\large{\textbf{Campus/Fakultäten:}}} \\
+  \rownumber & ULB/Ex Libris & Bibliotheksausweise können beantragt werden \\
+  \rownumber & Asta & Nicht jedes Referat einzeln zeigen. Der Asta stellt sich noch vor.\\
+  \rownumber & Oeconomicon zeigen & Here be Dragons\\
+  \rownumber & FH zeigen & Hier ist auch das IIK (Sprachkurse) \\
+  \rownumber & Philfak zeigen & HS3A mal durchs Fenster zeigen \\
+  \rownumber & Sternverlag/Büdchen & \\
+  \hline
+  \multicolumn{3}{l}{\large{\textbf{Campus/Mensa:}}} \\
+  \rownumber & Mensabrücke & \\
+  \rownumber & Subway &  Vor oder auf der Brücke (je nach Stand der Baustelle) die Richtung zeigen\\
+  \rownumber & Mensa/Restaurent/Cafete & Mensa-Karte kann gekauft werden \\
+  \hline
+  \multicolumn{3}{l}{\large{\textbf{Campus/Here be Dragons:}}} \\
+  \rownumber & Bafög-Amt & \\
+  \rownumber & Kita hinter der Mensa & Direkt hinter der Mensa rechts über die Grünfläche. Nur
+  zeigen und erwähnen, dass es sowas gibt \\
+  \rownumber & Prüfungsamt (SSC) & Frau Vandrey macht Regen und Feuer!\\
+  \rownumber & 16.12 & Ersatzhörsaal \\
 \end{tabularx}
-\vspace{5mm}
-
-\textbf{Liefert die Erstis nach den Führungen (spätestens 15:45 Uhr) bitte in folgenden Hörsälen ab:}\\ \vspace{\baselineskip}
-\hspace{-4mm}
-\begin{tabularx}{\textwidth}{p{0.3\textwidth}p{0.3\textwidth}p{0.3\textwidth}}
-Informatik:5E & Physik: 5M & Mathe: 5H
+\newpage
+\pretext
+\begin{tabularx}{\textwidth}{p{.02\textwidth}p{.3\textwidth}p{.68\textwidth}}
+  \textbf{Nr.} & \textbf{Station} & \textbf{Hinweise} \\
+  \hline
+  \multicolumn{3}{l}{\large{\textbf{Gebäude 25:}}} \\
+  \rownumber & FS-Info & Startposition -- An Frau Rennwanz vorbeilaufen beim kommen oder gehen. Frau
+  Rennwanz macht Regen und Feuer! \\
+  \rowcolor{cyan}
+  \rownumber & FS-Mathe & Startposition \\
+  \rownumber & FS-Physik & Startposition \\
+  \rownumber & ZIM & Startposition \\
+  \rownumber & Cafete & Startposition -- Mensakarte kann gekauft werden (geht auch an der anderen Cafete)\\
+  \rownumber & Schweinemensa/Wanne & Startposition \\
+  \rownumber & Fachbib & Startposition \\
+  \rownumber & Mathe-Prüfungskästen & Startposition \\
+  \rownumber & Copy-Shop (25.22.01.53) & \\
+  \rownumber & Glaskästen &  Alle 3 Kästen zeigen (im Vorbeilaufen von anderen Stationen)\\
+  \rownumber & Hörsääle & Im vorbeigehen zeigen ("`Hier ist HS5D"' usw.) \\
+  \rownumber & Toiletten & Wenn ihr an einer Toilette vorbeikommt, erklärt wo man
+  die jeweils andere Toilette finden würde \\
+  \rownumber & Frau Simons &  Prüfungsangelegenheiten für Mathematiker (nicht überspringen!) \\
+  \rownumber & Lageplan  & am Hauptausgang \\
+  \rownumber & Botanischer Garten, Haltestelle Uni/Ost, Sportanlagen & Am Haupteingang in die
+  Richtungen zeigen, wie man hinkommt. \\
+  \rownumber & Securitas & auch nur zeigen \\
+  \hline
+  \multicolumn{3}{l}{\large{\textbf{Campus/Fakultäten:}}} \\
+  \rownumber & ULB/Ex Libris & Bibliotheksausweise können beantragt werden \\
+  \rownumber & Asta & Nicht jedes Referat einzeln zeigen. Der Asta stellt sich noch vor.\\
+  \rownumber & Oeconomicon zeigen & Here be Dragons\\
+  \rownumber & FH zeigen & Hier ist auch das IIK (Sprachkurse) \\
+  \rownumber & Philfak zeigen & HS3A mal durchs Fenster zeigen \\
+  \rownumber & Sternverlag/Büdchen & \\
+  \hline
+  \multicolumn{3}{l}{\large{\textbf{Campus/Mensa:}}} \\
+  \rownumber & Mensabrücke & \\
+  \rownumber & Subway &  Vor oder auf der Brücke (je nach Stand der Baustelle) die Richtung zeigen\\
+  \rownumber & Mensa/Restaurent/Cafete & Mensa-Karte kann gekauft werden \\
+  \hline
+  \multicolumn{3}{l}{\large{\textbf{Campus/Here be Dragons:}}} \\
+  \rownumber & Bafög-Amt & \\
+  \rownumber & Kita hinter der Mensa & Direkt hinter der Mensa rechts über die Grünfläche. Nur
+  zeigen und erwähnen, dass es sowas gibt \\
+  \rownumber & Prüfungsamt (SSC) & Frau Vandrey macht Regen und Feuer!\\
+  \rownumber & 16.12 & Ersatzhörsaal \\
 \end{tabularx}
-
+\newpage
+\pretext
+\begin{tabularx}{\textwidth}{p{.02\textwidth}p{.3\textwidth}p{.68\textwidth}}
+  \textbf{Nr.} & \textbf{Station} & \textbf{Hinweise} \\
+  \hline
+  \multicolumn{3}{l}{\large{\textbf{Gebäude 25:}}} \\
+  \rownumber & FS-Info & Startposition -- An Frau Rennwanz vorbeilaufen beim kommen oder gehen. Frau
+  Rennwanz macht Regen und Feuer! \\
+  \rownumber & FS-Mathe & Startposition \\
+  \rowcolor{cyan}
+  \rownumber & FS-Physik & Startposition \\
+  \rownumber & ZIM & Startposition \\
+  \rownumber & Cafete & Startposition -- Mensakarte kann gekauft werden (geht auch an der anderen Cafete)\\
+  \rownumber & Schweinemensa/Wanne & Startposition \\
+  \rownumber & Fachbib & Startposition \\
+  \rownumber & Mathe-Prüfungskästen & Startposition \\
+  \rownumber & Copy-Shop (25.22.01.53) & \\
+  \rownumber & Glaskästen &  Alle 3 Kästen zeigen (im Vorbeilaufen von anderen Stationen)\\
+  \rownumber & Hörsääle & Im vorbeigehen zeigen ("`Hier ist HS5D"' usw.) \\
+  \rownumber & Toiletten & Wenn ihr an einer Toilette vorbeikommt, erklärt wo man
+  die jeweils andere Toilette finden würde \\
+  \rownumber & Frau Simons &  Prüfungsangelegenheiten für Mathematiker (nicht überspringen!) \\
+  \rownumber & Lageplan  & am Hauptausgang \\
+  \rownumber & Botanischer Garten, Haltestelle Uni/Ost, Sportanlagen & Am Haupteingang in die
+  Richtungen zeigen, wie man hinkommt. \\
+  \rownumber & Securitas & auch nur zeigen \\
+  \hline
+  \multicolumn{3}{l}{\large{\textbf{Campus/Fakultäten:}}} \\
+  \rownumber & ULB/Ex Libris & Bibliotheksausweise können beantragt werden \\
+  \rownumber & Asta & Nicht jedes Referat einzeln zeigen. Der Asta stellt sich noch vor.\\
+  \rownumber & Oeconomicon zeigen & Here be Dragons\\
+  \rownumber & FH zeigen & Hier ist auch das IIK (Sprachkurse) \\
+  \rownumber & Philfak zeigen & HS3A mal durchs Fenster zeigen \\
+  \rownumber & Sternverlag/Büdchen & \\
+  \hline
+  \multicolumn{3}{l}{\large{\textbf{Campus/Mensa:}}} \\
+  \rownumber & Mensabrücke & \\
+  \rownumber & Subway &  Vor oder auf der Brücke (je nach Stand der Baustelle) die Richtung zeigen\\
+  \rownumber & Mensa/Restaurent/Cafete & Mensa-Karte kann gekauft werden \\
+  \hline
+  \multicolumn{3}{l}{\large{\textbf{Campus/Here be Dragons:}}} \\
+  \rownumber & Bafög-Amt & \\
+  \rownumber & Kita hinter der Mensa & Direkt hinter der Mensa rechts über die Grünfläche. Nur
+  zeigen und erwähnen, dass es sowas gibt \\
+  \rownumber & Prüfungsamt (SSC) & Frau Vandrey macht Regen und Feuer!\\
+  \rownumber & 16.12 & Ersatzhörsaal \\
+\end{tabularx}
+\newpage
+\pretext
+\begin{tabularx}{\textwidth}{p{.02\textwidth}p{.3\textwidth}p{.68\textwidth}}
+  \textbf{Nr.} & \textbf{Station} & \textbf{Hinweise} \\
+  \hline
+  \multicolumn{3}{l}{\large{\textbf{Gebäude 25:}}} \\
+  \rownumber & FS-Info & Startposition -- An Frau Rennwanz vorbeilaufen beim kommen oder gehen. Frau
+  Rennwanz macht Regen und Feuer! \\
+  \rownumber & FS-Mathe & Startposition \\
+  \rownumber & FS-Physik & Startposition \\
+  \rowcolor{cyan}
+  \rownumber & ZIM & Startposition \\
+  \rownumber & Cafete & Startposition -- Mensakarte kann gekauft werden (geht auch an der anderen Cafete)\\
+  \rownumber & Schweinemensa/Wanne & Startposition \\
+  \rownumber & Fachbib & Startposition \\
+  \rownumber & Mathe-Prüfungskästen & Startposition \\
+  \rownumber & Copy-Shop (25.22.01.53) & \\
+  \rownumber & Glaskästen &  Alle 3 Kästen zeigen (im Vorbeilaufen von anderen Stationen)\\
+  \rownumber & Hörsääle & Im vorbeigehen zeigen ("`Hier ist HS5D"' usw.) \\
+  \rownumber & Toiletten & Wenn ihr an einer Toilette vorbeikommt, erklärt wo man
+  die jeweils andere Toilette finden würde \\
+  \rownumber & Frau Simons &  Prüfungsangelegenheiten für Mathematiker (nicht überspringen!) \\
+  \rownumber & Lageplan  & am Hauptausgang \\
+  \rownumber & Botanischer Garten, Haltestelle Uni/Ost, Sportanlagen & Am Haupteingang in die
+  Richtungen zeigen, wie man hinkommt. \\
+  \rownumber & Securitas & auch nur zeigen \\
+  \hline
+  \multicolumn{3}{l}{\large{\textbf{Campus/Fakultäten:}}} \\
+  \rownumber & ULB/Ex Libris & Bibliotheksausweise können beantragt werden \\
+  \rownumber & Asta & Nicht jedes Referat einzeln zeigen. Der Asta stellt sich noch vor.\\
+  \rownumber & Oeconomicon zeigen & Here be Dragons\\
+  \rownumber & FH zeigen & Hier ist auch das IIK (Sprachkurse) \\
+  \rownumber & Philfak zeigen & HS3A mal durchs Fenster zeigen \\
+  \rownumber & Sternverlag/Büdchen & \\
+  \hline
+  \multicolumn{3}{l}{\large{\textbf{Campus/Mensa:}}} \\
+  \rownumber & Mensabrücke & \\
+  \rownumber & Subway &  Vor oder auf der Brücke (je nach Stand der Baustelle) die Richtung zeigen\\
+  \rownumber & Mensa/Restaurent/Cafete & Mensa-Karte kann gekauft werden \\
+  \hline
+  \multicolumn{3}{l}{\large{\textbf{Campus/Here be Dragons:}}} \\
+  \rownumber & Bafög-Amt & \\
+  \rownumber & Kita hinter der Mensa & Direkt hinter der Mensa rechts über die Grünfläche. Nur
+  zeigen und erwähnen, dass es sowas gibt \\
+  \rownumber & Prüfungsamt (SSC) & Frau Vandrey macht Regen und Feuer!\\
+  \rownumber & 16.12 & Ersatzhörsaal \\
+\end{tabularx}
+\newpage
+\pretext
+\begin{tabularx}{\textwidth}{p{.02\textwidth}p{.3\textwidth}p{.68\textwidth}}
+  \textbf{Nr.} & \textbf{Station} & \textbf{Hinweise} \\
+  \hline
+  \multicolumn{3}{l}{\large{\textbf{Gebäude 25:}}} \\
+  \rownumber & FS-Info & Startposition -- An Frau Rennwanz vorbeilaufen beim kommen oder gehen. Frau
+  Rennwanz macht Regen und Feuer! \\
+  \rownumber & FS-Mathe & Startposition \\
+  \rownumber & FS-Physik & Startposition \\
+  \rownumber & ZIM & Startposition \\
+  \rowcolor{cyan}
+  \rownumber & Cafete & Startposition -- Mensakarte kann gekauft werden (geht auch an der anderen Cafete)\\
+  \rownumber & Schweinemensa/Wanne & Startposition \\
+  \rownumber & Fachbib & Startposition \\
+  \rownumber & Mathe-Prüfungskästen & Startposition \\
+  \rownumber & Copy-Shop (25.22.01.53) & \\
+  \rownumber & Glaskästen &  Alle 3 Kästen zeigen (im Vorbeilaufen von anderen Stationen)\\
+  \rownumber & Hörsääle & Im vorbeigehen zeigen ("`Hier ist HS5D"' usw.) \\
+  \rownumber & Toiletten & Wenn ihr an einer Toilette vorbeikommt, erklärt wo man
+  die jeweils andere Toilette finden würde \\
+  \rownumber & Frau Simons &  Prüfungsangelegenheiten für Mathematiker (nicht überspringen!) \\
+  \rownumber & Lageplan  & am Hauptausgang \\
+  \rownumber & Botanischer Garten, Haltestelle Uni/Ost, Sportanlagen & Am Haupteingang in die
+  Richtungen zeigen, wie man hinkommt. \\
+  \rownumber & Securitas & auch nur zeigen \\
+  \hline
+  \multicolumn{3}{l}{\large{\textbf{Campus/Fakultäten:}}} \\
+  \rownumber & ULB/Ex Libris & Bibliotheksausweise können beantragt werden \\
+  \rownumber & Asta & Nicht jedes Referat einzeln zeigen. Der Asta stellt sich noch vor.\\
+  \rownumber & Oeconomicon zeigen & Here be Dragons\\
+  \rownumber & FH zeigen & Hier ist auch das IIK (Sprachkurse) \\
+  \rownumber & Philfak zeigen & HS3A mal durchs Fenster zeigen \\
+  \rownumber & Sternverlag/Büdchen & \\
+  \hline
+  \multicolumn{3}{l}{\large{\textbf{Campus/Mensa:}}} \\
+  \rownumber & Mensabrücke & \\
+  \rownumber & Subway &  Vor oder auf der Brücke (je nach Stand der Baustelle) die Richtung zeigen\\
+  \rownumber & Mensa/Restaurent/Cafete & Mensa-Karte kann gekauft werden \\
+  \hline
+  \multicolumn{3}{l}{\large{\textbf{Campus/Here be Dragons:}}} \\
+  \rownumber & Bafög-Amt & \\
+  \rownumber & Kita hinter der Mensa & Direkt hinter der Mensa rechts über die Grünfläche. Nur
+  zeigen und erwähnen, dass es sowas gibt \\
+  \rownumber & Prüfungsamt (SSC) & Frau Vandrey macht Regen und Feuer!\\
+  \rownumber & 16.12 & Ersatzhörsaal \\
+\end{tabularx}
+\newpage
+\pretext
+\begin{tabularx}{\textwidth}{p{.02\textwidth}p{.3\textwidth}p{.68\textwidth}}
+  \textbf{Nr.} & \textbf{Station} & \textbf{Hinweise} \\
+  \hline
+  \multicolumn{3}{l}{\large{\textbf{Gebäude 25:}}} \\
+  \rownumber & FS-Info & Startposition -- An Frau Rennwanz vorbeilaufen beim kommen oder gehen. Frau
+  Rennwanz macht Regen und Feuer! \\
+  \rownumber & FS-Mathe & Startposition \\
+  \rownumber & FS-Physik & Startposition \\
+  \rownumber & ZIM & Startposition \\
+  \rownumber & Cafete & Startposition -- Mensakarte kann gekauft werden (geht auch an der anderen Cafete)\\
+  \rowcolor{cyan}
+  \rownumber & Schweinemensa/Wanne & Startposition \\
+  \rownumber & Fachbib & Startposition \\
+  \rownumber & Mathe-Prüfungskästen & Startposition \\
+  \rownumber & Copy-Shop (25.22.01.53) & \\
+  \rownumber & Glaskästen &  Alle 3 Kästen zeigen (im Vorbeilaufen von anderen Stationen)\\
+  \rownumber & Hörsääle & Im vorbeigehen zeigen ("`Hier ist HS5D"' usw.) \\
+  \rownumber & Toiletten & Wenn ihr an einer Toilette vorbeikommt, erklärt wo man
+  die jeweils andere Toilette finden würde \\
+  \rownumber & Frau Simons &  Prüfungsangelegenheiten für Mathematiker (nicht überspringen!) \\
+  \rownumber & Lageplan  & am Hauptausgang \\
+  \rownumber & Botanischer Garten, Haltestelle Uni/Ost, Sportanlagen & Am Haupteingang in die
+  Richtungen zeigen, wie man hinkommt. \\
+  \rownumber & Securitas & auch nur zeigen \\
+  \hline
+  \multicolumn{3}{l}{\large{\textbf{Campus/Fakultäten:}}} \\
+  \rownumber & ULB/Ex Libris & Bibliotheksausweise können beantragt werden \\
+  \rownumber & Asta & Nicht jedes Referat einzeln zeigen. Der Asta stellt sich noch vor.\\
+  \rownumber & Oeconomicon zeigen & Here be Dragons\\
+  \rownumber & FH zeigen & Hier ist auch das IIK (Sprachkurse) \\
+  \rownumber & Philfak zeigen & HS3A mal durchs Fenster zeigen \\
+  \rownumber & Sternverlag/Büdchen & \\
+  \hline
+  \multicolumn{3}{l}{\large{\textbf{Campus/Mensa:}}} \\
+  \rownumber & Mensabrücke & \\
+  \rownumber & Subway &  Vor oder auf der Brücke (je nach Stand der Baustelle) die Richtung zeigen\\
+  \rownumber & Mensa/Restaurent/Cafete & Mensa-Karte kann gekauft werden \\
+  \hline
+  \multicolumn{3}{l}{\large{\textbf{Campus/Here be Dragons:}}} \\
+  \rownumber & Bafög-Amt & \\
+  \rownumber & Kita hinter der Mensa & Direkt hinter der Mensa rechts über die Grünfläche. Nur
+  zeigen und erwähnen, dass es sowas gibt \\
+  \rownumber & Prüfungsamt (SSC) & Frau Vandrey macht Regen und Feuer!\\
+  \rownumber & 16.12 & Ersatzhörsaal \\
+\end{tabularx}
+\newpage
+\pretext
+\begin{tabularx}{\textwidth}{p{.02\textwidth}p{.3\textwidth}p{.68\textwidth}}
+  \textbf{Nr.} & \textbf{Station} & \textbf{Hinweise} \\
+  \hline
+  \multicolumn{3}{l}{\large{\textbf{Gebäude 25:}}} \\
+  \rownumber & FS-Info & Startposition -- An Frau Rennwanz vorbeilaufen beim kommen oder gehen. Frau
+  Rennwanz macht Regen und Feuer! \\
+  \rownumber & FS-Mathe & Startposition \\
+  \rownumber & FS-Physik & Startposition \\
+  \rownumber & ZIM & Startposition \\
+  \rownumber & Cafete & Startposition -- Mensakarte kann gekauft werden (geht auch an der anderen Cafete)\\
+  \rownumber & Schweinemensa/Wanne & Startposition \\
+  \rowcolor{cyan}
+  \rownumber & Fachbib & Startposition \\
+  \rownumber & Mathe-Prüfungskästen & Startposition \\
+  \rownumber & Copy-Shop (25.22.01.53) & \\
+  \rownumber & Glaskästen &  Alle 3 Kästen zeigen (im Vorbeilaufen von anderen Stationen)\\
+  \rownumber & Hörsääle & Im vorbeigehen zeigen ("`Hier ist HS5D"' usw.) \\
+  \rownumber & Toiletten & Wenn ihr an einer Toilette vorbeikommt, erklärt wo man
+  die jeweils andere Toilette finden würde \\
+  \rownumber & Frau Simons &  Prüfungsangelegenheiten für Mathematiker (nicht überspringen!) \\
+  \rownumber & Lageplan  & am Hauptausgang \\
+  \rownumber & Botanischer Garten, Haltestelle Uni/Ost, Sportanlagen & Am Haupteingang in die
+  Richtungen zeigen, wie man hinkommt. \\
+  \rownumber & Securitas & auch nur zeigen \\
+  \hline
+  \multicolumn{3}{l}{\large{\textbf{Campus/Fakultäten:}}} \\
+  \rownumber & ULB/Ex Libris & Bibliotheksausweise können beantragt werden \\
+  \rownumber & Asta & Nicht jedes Referat einzeln zeigen. Der Asta stellt sich noch vor.\\
+  \rownumber & Oeconomicon zeigen & Here be Dragons\\
+  \rownumber & FH zeigen & Hier ist auch das IIK (Sprachkurse) \\
+  \rownumber & Philfak zeigen & HS3A mal durchs Fenster zeigen \\
+  \rownumber & Sternverlag/Büdchen & \\
+  \hline
+  \multicolumn{3}{l}{\large{\textbf{Campus/Mensa:}}} \\
+  \rownumber & Mensabrücke & \\
+  \rownumber & Subway &  Vor oder auf der Brücke (je nach Stand der Baustelle) die Richtung zeigen\\
+  \rownumber & Mensa/Restaurent/Cafete & Mensa-Karte kann gekauft werden \\
+  \hline
+  \multicolumn{3}{l}{\large{\textbf{Campus/Here be Dragons:}}} \\
+  \rownumber & Bafög-Amt & \\
+  \rownumber & Kita hinter der Mensa & Direkt hinter der Mensa rechts über die Grünfläche. Nur
+  zeigen und erwähnen, dass es sowas gibt \\
+  \rownumber & Prüfungsamt (SSC) & Frau Vandrey macht Regen und Feuer!\\
+  \rownumber & 16.12 & Ersatzhörsaal \\
+\end{tabularx}
+\newpage
+\pretext
+\begin{tabularx}{\textwidth}{p{.02\textwidth}p{.3\textwidth}p{.68\textwidth}}
+  \textbf{Nr.} & \textbf{Station} & \textbf{Hinweise} \\
+  \hline
+  \multicolumn{3}{l}{\large{\textbf{Gebäude 25:}}} \\
+  \rownumber & FS-Info & Startposition -- An Frau Rennwanz vorbeilaufen beim kommen oder gehen. Frau
+  Rennwanz macht Regen und Feuer! \\
+  \rownumber & FS-Mathe & Startposition \\
+  \rownumber & FS-Physik & Startposition \\
+  \rownumber & ZIM & Startposition \\
+  \rownumber & Cafete & Startposition -- Mensakarte kann gekauft werden (geht auch an der anderen Cafete)\\
+  \rownumber & Schweinemensa/Wanne & Startposition \\
+  \rownumber & Fachbib & Startposition \\
+  \rowcolor{cyan}
+  \rownumber & Mathe-Prüfungskästen & Startposition \\
+  \rownumber & Copy-Shop (25.22.01.53) & \\
+  \rownumber & Glaskästen &  Alle 3 Kästen zeigen (im Vorbeilaufen von anderen Stationen)\\
+  \rownumber & Hörsääle & Im vorbeigehen zeigen ("`Hier ist HS5D"' usw.) \\
+  \rownumber & Toiletten & Wenn ihr an einer Toilette vorbeikommt, erklärt wo man
+  die jeweils andere Toilette finden würde \\
+  \rownumber & Frau Simons &  Prüfungsangelegenheiten für Mathematiker (nicht überspringen!) \\
+  \rownumber & Lageplan  & am Hauptausgang \\
+  \rownumber & Botanischer Garten, Haltestelle Uni/Ost, Sportanlagen & Am Haupteingang in die
+  Richtungen zeigen, wie man hinkommt. \\
+  \rownumber & Securitas & auch nur zeigen \\
+  \hline
+  \multicolumn{3}{l}{\large{\textbf{Campus/Fakultäten:}}} \\
+  \rownumber & ULB/Ex Libris & Bibliotheksausweise können beantragt werden \\
+  \rownumber & Asta & Nicht jedes Referat einzeln zeigen. Der Asta stellt sich noch vor.\\
+  \rownumber & Oeconomicon zeigen & Here be Dragons\\
+  \rownumber & FH zeigen & Hier ist auch das IIK (Sprachkurse) \\
+  \rownumber & Philfak zeigen & HS3A mal durchs Fenster zeigen \\
+  \rownumber & Sternverlag/Büdchen & \\
+  \hline
+  \multicolumn{3}{l}{\large{\textbf{Campus/Mensa:}}} \\
+  \rownumber & Mensabrücke & \\
+  \rownumber & Subway &  Vor oder auf der Brücke (je nach Stand der Baustelle) die Richtung zeigen\\
+  \rownumber & Mensa/Restaurent/Cafete & Mensa-Karte kann gekauft werden \\
+  \hline
+  \multicolumn{3}{l}{\large{\textbf{Campus/Here be Dragons:}}} \\
+  \rownumber & Bafög-Amt & \\
+  \rownumber & Kita hinter der Mensa & Direkt hinter der Mensa rechts über die Grünfläche. Nur
+  zeigen und erwähnen, dass es sowas gibt \\
+  \rownumber & Prüfungsamt (SSC) & Frau Vandrey macht Regen und Feuer!\\
+  \rownumber & 16.12 & Ersatzhörsaal \\
+\end{tabularx}
+\newpage
 \end{document}
