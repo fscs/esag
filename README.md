@@ -23,6 +23,11 @@ Alle gebauten Dateien löschen geht mit
 
     rake clean
 
+# conf.json
+
+Diese Datei enthält Konfigurationen, die für einzelne Dokumente wichtig sind. Im nächsten
+Abschnitt wird im Einzelnen darauf eingegangen.
+
 # Dokumente
 
 Hier eine Übersicht aller Dokumente:
@@ -34,6 +39,30 @@ Hier eine Übersicht aller Dokumente:
 ## fuehrungen.tex
 
 Stationen der Campus-Führungen
+
+### Konfiguration
+
+In der `conf.json` kann man einmal die Anzahl der Gruppen und dann die Stationen konfigurieren.
+
+```json
+{
+  "fuehrungen": {
+    "num": 8,
+    "sections": [
+      {
+        "name": "Gebäude 25",
+        "stations": [
+          { "name": "FS-Info", "hinweise": "Startposition -- An Frau Rennwanz vorbeilaufen beim kommen oder gehen. Frau Rennwanz macht Regen und Feuer!" }
+        ]
+      }
+    ]
+  }
+}
+```
+
+Das Ausführen von `rake fuehrungen.pdf` erzeugt dann alle Führungen in `src/fuehrungen/`, was
+nicht versioniert wird. __Zusätzlich__ muss in der Datei `src/fuehrungen.tex` darauf geachtet
+werden, alle Führungen mit `\input` einzubinden.
 
 ## gruppenzettel_rallye.tex
 
