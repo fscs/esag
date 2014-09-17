@@ -9,3 +9,5 @@
 hhulogo_g.*
 build/*
 !build/*.pdf
+
+src/fuehrungen/

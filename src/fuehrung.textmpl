@@ -1,0 +1,6 @@
+\pretext
+\begin{tabularx}{\textwidth}{p{.02\textwidth}p{.3\textwidth}p{.68\textwidth}}
+  \textbf{Nr.} & \textbf{Station} & \textbf{Hinweise} \\\\
+  {{stations}}
+\end{tabularx}
+\newpage

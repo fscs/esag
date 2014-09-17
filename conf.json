@@ -1,0 +1,55 @@
+{
+  "fuehrungen": {
+    "num": 8,
+    "sections": [
+      {
+        "name": "Gebäude 25",
+        "stations": [
+          { "name": "FS-Info", "hinweise": "Startposition -- An Frau Rennwanz vorbeilaufen beim kommen oder gehen. Frau Rennwanz macht Regen und Feuer!" },
+          { "name": "FS-Mathe", "hinweise": "Startposition" },
+          { "name": "FS-Physik", "hinweise": "Startposition" },
+          { "name": "Cafete", "hinweise": "Startposition -- Mensakarte kann gekauft werden (geht auch an der anderen Cafete)" },
+          { "name": "Schweinemensa/Wanne", "hinweise": "Startposition" },
+          { "name": "Fachbib", "hinweise": "Startposition" },
+          { "name": "Mathe-Prüfungskästen", "hinweise": "Startposition" },
+          { "name": "Copy-Shop", "hinweise": "" },
+          { "name": "Glaskästen", "hinweise": "Alle 3 Kästen zeigen (im Vorbeilaufen von anderen Stationen" },
+          { "name": "Hörsääle", "hinweise": "Im Vorbeigehen zeigen (\"`Hier ist HS5[ABCDEFGHIJKLM]\"')" },
+          { "name": "Toiletten", "hinweise": "Wenn ihr an einer Toilette vorbeikommt, erklärt wo man die jeweils andere Toilette finden würde" },
+          { "name": "Frau Simons", "hinweise": " Prüfungsangelegenheiten für Mathematiker (nicht überspringen!) " },
+          { "name": "Lageplan ", "hinweise": "am Hauptausgang " },
+          { "name": "Botanischer Garten, Haltestelle Uni/Ost, Sportanlagen", "hinweise": "Am Haupteingang in die Richtungen zeigen, wie man hinkommt. " },
+          { "name": "Securitas", "hinweise": "auch nur zeigen " }
+        ]
+      },
+      {
+        "name": "Campus/Fakultäten",
+        "stations": [
+          { "name": "ULB/Ex Libris", "hinweise": "Bibliotheksausweise können beantragt werden " },
+          { "name": "Asta", "hinweise": "Nicht jedes Referat einzeln zeigen. Der Asta stellt sich noch vor." },
+          { "name": "Oeconomicon zeigen", "hinweise": "Here be Dragons" },
+          { "name": "FH zeigen", "hinweise": "Hier ist auch das IIK (Sprachkurse) " },
+          { "name": "Philfak zeigen", "hinweise": "HS3A mal durchs Fenster zeigen " },
+          { "name": "Sternverlag/Büdchen", "hinweise": "" }
+        ]
+      },
+      {
+        "name": "Campus/Mensa",
+        "stations": [
+          { "name": "Mensabrücke", "hinweise": "" },
+          { "name": "Subway", "hinweise": " Vor oder auf der Brücke (je nach Stand der Baustelle) die Richtung zeigen" },
+          { "name": "Mensa/Restaurent/Cafete", "hinweise": "Mensa-Karte kann gekauft werden " }
+        ]
+      },
+      {
+        "name": "Campus/Here Be Dragons",
+        "stations": [
+          { "name": "Bafög-Amt", "hinweise": "" },
+          { "name": "Kita hinter der Mensa", "hinweise": "Direkt hinter der Mensa rechts über die Grünfläche. Nur zeigen und erwähnen, dass es sowas gibt " },
+          { "name": "Prüfungsamt (SSC)", "hinweise": "Frau Vandrey macht Regen und Feuer!" },
+          { "name": "16.12", "hinweise": "Ersatzhörsaal " }
+        ]
+      }
+    ]
+  }
+}
