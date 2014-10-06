@@ -4,15 +4,17 @@ require 'json'
 BUILDDIR = "build"
 SRCDIR = "src"
 LIBDIR = "lib"
+FUEHRUNGEN_DIR = "#{SRCDIR}/fuehrungen"
 
 CLEAN.include File.join BUILDDIR, '*'
+CLEAN.include File.join FUEHRUNGEN_DIR, '*'
 
 TEXFILES = []
 
 CONF = JSON.parse IO.read "conf.json"
 
 DEPS = Hash.new []
-DEPS["fuehrungen.pdf"] = (1..CONF["fuehrungen"]["num"].to_i).map { |i| "#{SRCDIR}/fuehrungen/fuehrung#{i}.tex" }
+DEPS["fuehrungen.pdf"] = (1..CONF["fuehrungen"]["num"].to_i).map { |i| "#{FUEHRUNGEN_DIR}/fuehrung#{i}.tex" }
 
 def make_and_add_to_default_task t, deps=[]
   job = t.gsub '.pdf', ''
@@ -45,7 +47,8 @@ def make_fuehrung num
 
   result = IO.read("#{SRCDIR}/fuehrung.textmpl").gsub "{{stations}}", str_fuehrungen
 
-  File.open("#{SRCDIR}/fuehrungen/fuehrung#{num}.tex", "w") do |f|
+  Dir.mkdir FUEHRUNGEN_DIR unless Dir.exists? FUEHRUNGEN_DIR
+  File.open("#{FUEHRUNGEN_DIR}/fuehrung#{num}.tex", "w") do |f|
     f.write result
   end
 end
