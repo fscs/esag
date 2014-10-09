@@ -27,7 +27,7 @@
         "stations": [
           { "name": "ULB/Ex Libris", "hinweise": "Bibliotheksausweise können beantragt werden " },
           { "name": "Asta", "hinweise": "Nicht jedes Referat einzeln zeigen. Der Asta stellt sich noch vor." },
-          { "name": "Oeconomicon zeigen", "hinweise": "Here be Dragons" },
+          { "name": "Oeconomicon zeigen", "hinweise": "Here be Dragons. Hier ist auch das DICE" },
           { "name": "FH zeigen", "hinweise": "Hier ist auch das IIK (Sprachkurse) " },
           { "name": "Philfak zeigen", "hinweise": "HS3A mal durchs Fenster zeigen " },
           { "name": "Sternverlag/Büdchen", "hinweise": "" }
